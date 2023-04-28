@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakeWorld</title>
+    <link rel="icon" href="iconMain.jpg" type="image icon"/>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .body{
+        background: url(final.jpg);
+        height: 100vh;
+        width: 100vw;
+        background-size: 100vw 100vh;
+    }
+    #Heading{
+        position: absolute;
+        top: 20px;
+        left:30vw ;
+        font-size: 100px;
+        font-weight: bold;
+        font-family: 'Rubik Wet Paint', cursive;
+        text-shadow: 4px 4px 4px #aaa;
+        color:rgb(57, 22, 22);
+    }
+    #level1{
+        position: absolute;
+        bottom: 40px;
+        left: 20vw;
+        font-family: 'Rubik Wet Paint', cursive;
+    }
+    #level2{
+        position: absolute;
+        bottom: 40px;
+        left: 45vw;
+        font-family: 'Rubik Wet Paint', cursive;
+    }
+    #level3{
+        position: absolute;
+        bottom: 40px;
+        right: 20vw;
+        font-family: 'Rubik Wet Paint', cursive;
+    }
+    a:link, a:visited {
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 39px;
+        font-weight: bold;
+        font-family: 'Cinzel Decorative', cursive;
+      }
+      
+      a:hover, a:active {
+        background-color: rgb(104, 26, 26);
+        border-radius: 10px;
+        box-shadow: 10px 10px 8px 10px #090909;
+      }
+
+      #HiScores{
+        position: absolute;
+        top:40vh;
+        left:10vh;
+        font-size: 39px;
+        font-weight: bold;
+        color: rgb(30, 52, 52);
+        font-family: 'Rubik Wet Paint', cursive;
+      }
+      #Header{
+        font-size: 49px;
+        padding-bottom: 30px;
+        color: rgb(15, 15, 56);
+        font-family: 'Rubik Wet Paint', cursive;
+      }
+      #instruction{
+        position: absolute;
+        font-size: 49px;
+        color: rgb(15, 15, 56);
+        font-family: 'Rubik Wet Paint', cursive;
+        top: 40vh;
+        right:3vw;
+
+      }
+
+</style>
+<body>
+    <div class="body" ,id="BodyId">
+        <div id="Heading">SNAKE WORLD</div>
+        <div id="level1"><a href="Level1.html" id ="link1" >LEVEL-1</a></div>
+        <div id="level2"><a href="Level2.html" id = "link2">LEVEL-2</a></div>
+        <div id="level3"><a href="Level3.html"  id="link3" >LEVEL-3</a></div>
+        <div id="HiScores">
+            <div id="Header">Score Board</div>
+            <div id="l1">Level 1: 0</div>
+            <div id="l2">Level 2: 0</div>
+            <div id="l3">Level 3: 0</div>
+        </div>
+        <div id="instruction"><a href="instruction.html" >Instructions</a></div>
+        
+    </div>
+
+</body>
+<script>
+    let level1Ele = document.getElementById("l1");
+    let level2Ele = document.getElementById("l2");
+    let level3Ele = document.getElementById("l3");
+    let hiscore1Ele = localStorage.getItem("hiscore");
+    let hiscore2Ele = localStorage.getItem("hiscore2");
+    let hiscore3Ele = localStorage.getItem("hiscore3");
+    level1Ele.innerHTML="LEVEL 1 | Hi-Score: "+ hiscore1Ele;
+    level2Ele.innerHTML="LEVEL 2 | Hi-Score: "+ hiscore2Ele;
+    level3Ele.innerHTML="LEVEL 3 | Hi-Score: "+ hiscore3Ele;
+
+
+
+     //var link = document.getElementById("link1"); 
+   
+
+      /*link.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the link from opening immediately
+        Heading.innerHTML ="3";
+        var count = 2;
+        var timer = setInterval(function() {
+          Heading.innerHTML = count;
+          count--;
+
+          if (count < 1) {
+            clearInterval(timer);
+            window.location.href = link1.href; // Redirect to the link's URL
+          }
+        }, 1000); // Run the timer every second (1000 milliseconds)
+      });
+    var link = document.getElementById("link2");
+      link.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the link from opening immediately
+        Heading.innerHTML ="3";
+        var count = 2;
+        var timer = setInterval(function() {
+          Heading.innerHTML = count;
+          count--;
+
+          if (count < 1) {
+            clearInterval(timer);
+            window.location.href = link2.href; // Redirect to the link's URL
+          }
+        }, 1000); // Run the timer every second (1000 milliseconds)
+      });
+    var link = document.getElementById("link3");
+      link.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the link from opening immediately
+        Heading.innerHTML ="3";
+        var count = 2;
+        var timer = setInterval(function() {
+          Heading.innerHTML = count;
+          count--;
+
+          if (count < 1) {
+            clearInterval(timer);
+            window.location.href = link3.href; // Redirect to the link's URL
+          }
+        }, 1000); // Run the timer every second (1000 milliseconds)
+      }); 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

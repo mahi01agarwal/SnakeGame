@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background: url("bg4.jpg");
+    height:100vh;
+    width: 100vw;
+    background-size: 100vw 100vh;
+    display: flex;
+    font-weight: bold;
+    font-family: 'Cinzel Decorative', cursive;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+#board{
+    background-color: rgb(190, 215, 135);
+    height: 90vmin;
+    width: 90vmin;
+    margin-left: 50px;
+    margin-top: 40px;
+    border: 2px Solid rgb(5, 178, 22);
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+    padding: 10px;
+  box-shadow: 10px 10px 18px rgb(42, 40, 40);
+}
+#scoreBox{
+    position: absolute;
+    top:150px;
+    left: 47vw;
+    font-size: 49px;
+    font-weight: bold;
+}
+#HiscoreBox{
+    position: absolute;
+    top:230px;
+    left: 47vw;
+    font-size: 49px;
+    /* font-weight: bold; */
+    font-family: 'Cinzel Decorative', cursive;
+
+}
+#level{
+    position: absolute;
+    top:50px;
+    left:47vw;
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(11, 26, 26);
+}
+
+.head{
+    background-color: rgb(30, 30, 93);
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.snake{
+    background-color: rgb(20, 158, 112);
+    border: 2px solid black;
+    border-radius: 15px;
+}
